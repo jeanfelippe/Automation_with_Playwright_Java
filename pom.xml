@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Automation_with_Playwright_Java</artifactId>
+  <artifactId>PlayWright_Project</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Automation_with_Playwright_Java</name>
+  <name>PlayWright_Project</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -25,8 +25,7 @@
     <dependency>
       <groupId>com.microsoft.playwright</groupId>
       <artifactId>playwright</artifactId>
-      <version>1.32.0</version>
+      <version>1.45.0</version>
     </dependency>
-
   </dependencies>
 </project>
