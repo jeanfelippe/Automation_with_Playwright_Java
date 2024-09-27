@@ -49,5 +49,18 @@ public class LoginCucumberTest {
     //Logout from application
     @Then("User logout from the application")
     public void logoutFromApplication() {
-        login.logoutApplication();}
+        login.logoutApplication();
+    }
+
+        //Error Message when insert incorrect credentials
+    @Then("error message is showed")
+    public void errorIncorrectLogin() {
+        login.errorIncorrectLogin();
+        }
+
+
+
+
+
+
 }

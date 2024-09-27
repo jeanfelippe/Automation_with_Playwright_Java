@@ -9,3 +9,14 @@ Feature: Login
     Examples:
       | UserName | Password | ProductName |
       | standard_user | secret_sauce | Sauce Labs Backpack |
+
+
+
+  Scenario Outline: Login Error to the SwagLabs Application with the incorrect credentials.
+    Given User launched SwagLabs application
+    When User logged in to the app using the username "<UserName>" and password "<Password>"
+    Then error message is showed
+
+    Examples:
+      | UserName | Password | ProductName |
+      | fake | fake | Sauce Labs Backpack |

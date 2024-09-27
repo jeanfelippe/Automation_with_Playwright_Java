@@ -1,6 +1,8 @@
 package com.saucedemo.pages;
 
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.assertions.PlaywrightAssertions;
+import org.junit.Assert;
 
 public class LoginPage {
 
@@ -48,5 +50,14 @@ public class LoginPage {
     public void clickOnHamburger() {
         page.click(clickHamburger);
 
-    }public void clickOnLogout() {
-        page.click(clickLogout);}}
+    }
+    public void clickOnLogout() {
+        page.click(clickLogout);
+    }
+
+    public void errorIncorrectLogin(){
+        PlaywrightAssertions.assertThat(page.locator("[data-test=\"error\"]")).isVisible();
+    }
+
+
+}
