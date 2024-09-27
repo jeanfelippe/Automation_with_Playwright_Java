@@ -6,6 +6,7 @@ import org.junit.Assert;
 
 public class LoginPage {
 
+
     Page page;
 
 // Locator — — — -

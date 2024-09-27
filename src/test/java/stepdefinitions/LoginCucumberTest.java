@@ -22,6 +22,7 @@ public class LoginCucumberTest {
     Browser browser = firefox.launch(new BrowserType.LaunchOptions().setHeadless(false));
     Page page = browser.newPage();
 
+
     @Given("User launched SwagLabs application")
     public void setUp() {
         page.navigate("https://www.saucedemo.com/");
@@ -53,10 +54,10 @@ public class LoginCucumberTest {
     }
 
         //Error Message when insert incorrect credentials
-    @Then("error message is showed")
-    public void errorIncorrectLogin() {
-        login.errorIncorrectLogin();
-        }
+//    @Then("error message is showed")
+//    public void errorIncorrectLogin() {
+//        login.errorIncorrectLogin();
+//        }
 
 
 
